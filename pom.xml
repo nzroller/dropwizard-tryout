@@ -14,6 +14,29 @@
       <artifactId>dropwizard-core</artifactId>
       <version>0.5.1</version>
     </dependency>
+    <dependency>
+      <groupId>com.yammer.dropwizard</groupId>
+      <artifactId>dropwizard-views</artifactId>
+      <version>0.5.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.yammer.dropwizard</groupId>
+      <artifactId>dropwizard-db</artifactId>
+      <version>0.5.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.yammer.dropwizard</groupId>
+      <artifactId>dropwizard-auth</artifactId>
+      <version>0.5.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.yammer.dropwizard</groupId>
+      <artifactId>dropwizard-testing</artifactId>
+      <version>0.5.1</version>
+			<scope>test</scope>
+    </dependency>
+
 	</dependencies>
 	<build>
 		<plugins>

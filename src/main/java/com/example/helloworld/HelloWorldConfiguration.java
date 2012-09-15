@@ -5,27 +5,27 @@ import org.codehaus.jackson.annotate.JsonProperty;
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class HelloWorldConfiguration extends Configuration {
-		@NotEmpty
-		@JsonProperty
-		private String template;
+	@NotEmpty
+	@JsonProperty
+	private String template;
 
-		@NotEmpty
-		@JsonProperty
-		private String defaultName = "Stranger";
+	@NotEmpty
+	@JsonProperty
+	private String defaultName = "Stranger";
 
-		@NotEmpty
-		@JsonProperty
-		private String defaultAppendum = "Appendum";
-		
-		public String getTemplate() {
-				return template;
-		}
+	@NotEmpty
+	@JsonProperty
+	private String defaultAppendum = "Appendum";
 
-		public String getDefaultName() {
-				return defaultName;
-		}
+	public String getTemplate() {
+		return template;
+	}
 
-		public String getDefaultAppendum() {
-				return defaultAppendum;
-		}
+	public String getDefaultName() {
+		return defaultName;
+	}
+
+	public String getDefaultAppendum() {
+		return defaultAppendum;
+	}
 }
