@@ -36,6 +36,7 @@ public class HelloWorldResource {
 	
 	}
 	
+	
 	@GET
 	@Path("person")
 	public PersonView helloPerson(@QueryParam("salutation") Optional<String> salutation) {
