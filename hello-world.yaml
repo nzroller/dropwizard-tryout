@@ -1,5 +1,13 @@
 template: Hello, %s!
 defaultName: Stranger
+environment: development
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
 http:
   rootPath: /service/*
 

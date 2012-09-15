@@ -1,12 +1,19 @@
 package com.example.helloworld.core;
 
 public class Person {
-	final String firstname;
-	final String lastname;
+	final int id;
+	final String name;
 
-	public Person(String firstname, String lastname) {
-		this.firstname = firstname;
-		this.lastname = lastname;
+	public Person(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+	public String getName() {
+		return name;
 	}
 
 }

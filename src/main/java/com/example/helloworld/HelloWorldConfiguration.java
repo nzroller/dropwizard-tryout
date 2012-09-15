@@ -22,6 +22,10 @@ public class HelloWorldConfiguration extends Configuration {
 	@JsonProperty
 	private String defaultAppendum = "Appendum";
 
+	@NotEmpty
+	@JsonProperty
+	private String environment = "production"; 
+	
 	@Valid
     @NotNull
     @JsonProperty
@@ -42,5 +46,9 @@ public class HelloWorldConfiguration extends Configuration {
 
 	public String getDefaultAppendum() {
 		return defaultAppendum;
+	}
+
+	public String getEnvironment() {
+		return environment;
 	}
 }
