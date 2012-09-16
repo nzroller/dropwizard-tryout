@@ -9,19 +9,19 @@ import com.yammer.dropwizard.logging.Log;
 public class PersonDAOStub implements PersonDAO {
 	private static final Log LOG = Log.forClass(PersonDAO.class);
 
-	private final HashMap<String, Person> hack;
+	private final HashMap<String, Person> byName;
 	private final HashMap<Integer, Person> people;
 
 	public PersonDAOStub() {
 		people = new HashMap<>();
-		hack = new HashMap<>();
+		byName = new HashMap<>();
 	}
 
 	@Override
-	public void insert(int id, String name) {
+	public void insert(int id, String name, String password) {
 		LOG.info("testing");
-		people.put(id, new Person(id, name));
-		hack.put(name, new Person(id, name));
+		people.put(id, new Person(id, name, password));
+		byName.put(name, new Person(id, name, password));
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class PersonDAOStub implements PersonDAO {
 
 	@Override
 	public Person findByName(String name) {
-		return hack.get(name);
+		return byName.get(name);
 	}
 
 	@Override

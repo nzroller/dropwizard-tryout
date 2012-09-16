@@ -12,7 +12,7 @@ public class PersonMapper implements ResultSetMapper<Person> {
 
 	@Override
 	public Person map(int index, ResultSet rs, StatementContext ctx) throws SQLException {
-		return new Person(rs.getInt("id"), rs.getString("name"));
+		return new Person(rs.getInt("id"), rs.getString("name"), rs.getString("password"));
 	}
 
 }

@@ -2,8 +2,6 @@ package com.example.helloworld.resources;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import javax.inject.Inject;
-import javax.inject.Named;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -22,10 +20,9 @@ public class HelloWorldResource {
 	private final String defaultAppendum;
 	private final AtomicLong counter;
 
-	@Inject
-	HelloWorldResource(@Named("template") String template, 
-			@Named("defaultName") String defaultName,
-			@Named("defaultAppendum") String defaultAppendum) {
+	public HelloWorldResource(String template, 
+			String defaultName,
+			String defaultAppendum) {
 		this.template = template;
 		this.defaultName = defaultName;
 		this.counter = new AtomicLong();

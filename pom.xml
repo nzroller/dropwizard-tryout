@@ -48,16 +48,6 @@
       <version>1.9.0</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.fiestacabin.dropwizard.guice</groupId>
-			<artifactId>dropwizard-guice</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.inject</groupId>
-			<artifactId>guice</artifactId>
-			<version>3.0</version>
-		</dependency>
 		<!-- from webjars -->
 		<dependency>
           <groupId>com.jquery</groupId>
