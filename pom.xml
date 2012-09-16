@@ -41,7 +41,29 @@
 			<artifactId>postgresql</artifactId>
 			<version>9.1-901.jdbc4</version>
 		</dependency>
-            
+		<!-- Not scoped `test' because we use mocks for staging environments -->
+		<dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.9.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fiestacabin.dropwizard.guice</groupId>
+			<artifactId>dropwizard-guice</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<!-- from webjars -->
+		<dependency>
+          <groupId>com.jquery</groupId>
+          <artifactId>jquery</artifactId>
+          <version>1.7.2-1</version>
+    </dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -92,4 +114,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!-- jquery + -->
+	<repositories>
+    <repository>
+      <id>webjars</id>
+      <url>http://webjars.github.com/m2</url>
+    </repository>
+	</repositories>
 </project>

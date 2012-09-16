@@ -1,11 +1,15 @@
 package com.example.helloworld.health;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import com.yammer.metrics.core.HealthCheck;
 
 public class TemplateHealthCheck extends HealthCheck {
 	private final String template;
 
-	public TemplateHealthCheck(String template) {
+	@Inject
+	TemplateHealthCheck(@Named("template") String template) {
 		super("template");
 		this.template = template;
 	}

@@ -1,7 +1,10 @@
 package com.example.helloworld.core;
 
+import org.codehaus.jackson.annotate.JsonProperty;
+
 public class Person {
 	final int id;
+	@JsonProperty
 	final String name;
 
 	public Person(int id, String name) {

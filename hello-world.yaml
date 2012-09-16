@@ -1,6 +1,6 @@
 template: Hello, %s!
 defaultName: Stranger
-environment: development
+environment: production
 
 # Logging settings.
 logging:
